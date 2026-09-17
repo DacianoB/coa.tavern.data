@@ -16,7 +16,8 @@
     {
       "source": "scripts/import-ascension-client-data.ts",
       "published": "scripts/import-ascension-client-data.ts",
-      "sha256": "261331855ce3e8aa4d2e691d8156158c2a0a9b52143d57b0d120c0c7ade8ae1c"
+      "sha256": "261331855ce3e8aa4d2e691d8156158c2a0a9b52143d57b0d120c0c7ade8ae1c",
+      "originalUnmodifiedCopy": "reference/original-scripts/import-ascension-client-data.ts"
     },
     {
       "source": "scripts/import-ascension-scraper.ts",

@@ -7,3 +7,4 @@
 *.lua -text
 *.luax -text
 *.json -text
+reference/original-scripts/*.ts -text

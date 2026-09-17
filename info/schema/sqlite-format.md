@@ -45,7 +45,8 @@ camel-case columns back to PostgreSQL.
 ## Consistency and provenance
 
 Both files are generated within one PostgreSQL repeatable-read read-only
-transaction. Source counts are compared while that snapshot is open. The source
+transaction. Rows stream without a source-side sort; row order has no semantic
+meaning and SQLite primary keys still identify the records. Source counts are compared while that snapshot is open. The source
 repository commit identifies the copied logic, not a guarantee that every row
 was created by that exact commit. Some rows were imported earlier, and some
 overlays have incomplete original provenance.

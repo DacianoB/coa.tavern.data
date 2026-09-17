@@ -60,8 +60,9 @@ try {
       const primaryKey = (await client.query(`SELECT a.attname AS name FROM pg_index i JOIN pg_class c ON c.oid=i.indrelid JOIN pg_namespace n ON n.oid=c.relnamespace CROSS JOIN LATERAL unnest(i.indkey) WITH ORDINALITY AS k(attnum,ord) JOIN pg_attribute a ON a.attrelid=c.oid AND a.attnum=k.attnum WHERE i.indisprimary AND n.nspname=$1 AND c.relname=$2 ORDER BY k.ord`, [schema,table])).rows.map(r=>r.name);
       db.exec(`CREATE TABLE ${quote(table)} (${columns.map(c=>`${quote(c.name)} ${c.sqliteType}${c.notNull?' NOT NULL':''}`).join(',')}${primaryKey.length?`, PRIMARY KEY (${primaryKey.map(quote).join(',')})`:''})`);
       const insert = db.prepare(`INSERT INTO ${quote(table)} VALUES (${columns.map(()=>'?').join(',')})`);
-      const ordering = primaryKey.length ? ` ORDER BY ${primaryKey.map(quote).join(',')}` : '';
-      await client.query(`DECLARE public_export_cursor NO SCROLL CURSOR FOR SELECT ${columns.map(c=>`${quote(c.name)}::text AS ${quote(c.name)}`).join(',')} FROM ${quote(schema)}.${quote(table)}${ordering}`);
+      // Physical row order is not part of a relational snapshot. Sorting wide
+      // tooltip payloads can exhaust the source server's temporary disk.
+      await client.query(`DECLARE public_export_cursor NO SCROLL CURSOR FOR SELECT ${columns.map(c=>`${quote(c.name)}::text AS ${quote(c.name)}`).join(',')} FROM ${quote(schema)}.${quote(table)}`);
       let rows = 0;
       for (;;) {
         const batch = await client.query({text:'FETCH FORWARD 10000 FROM public_export_cursor',rowMode:'array'});
