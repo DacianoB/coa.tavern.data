@@ -3,11 +3,39 @@
 A public archive of the data collected for CoA Tavern: **raw files, database
 snapshots, their structure, and the findings behind them**.
 
-**[Download all data](https://github.com/DacianoB/coa.tavern.data/releases/latest)** ?
-**[Research and explanations](info/README.md)** ? **[Database structure](info/schema/README.md)**
+**[Download all data](https://github.com/DacianoB/coa.tavern.data/releases/latest)** |
+**[Research and explanations](info/README.md)** | **[Database structure](info/schema/README.md)**
 
 No application is required. Download the files and open the databases with any
 SQLite viewer, inspect the raw Lua/DBC files, or read the Markdown documentation.
+
+## How the data was collected
+
+Base tables, Lua definitions and icons were extracted from the Ascension client's
+MPQ archives. In-game addons queried item/spell APIs and tooltips, waited for
+cached responses, and saved the captures as Lua SavedVariables on reload/logout.
+Import scripts parsed and merged those captures into AoWoW-compatible PostgreSQL
+tables; this archive shares the original files, table structure and SQLite exports.
+See [the capture process](info/pipeline/in-game-scraping.md).
+
+## What was found about item scaling
+
+ScaleDump called `GetScalingItemStats(itemID, level)` at levels **1, 15, 30, 45
+and 60**, plus an item's default level when needed. The merged captures contain
+**11,829 items and 62,225 measured item/level rows**. Another **100 reference
+items were measured at every level from 1 to 60**, providing observed curves
+for reconstructing values between sparse measurements.
+
+Reconstruction uses exact measurements first, then compatible reference curves
+to estimate individual numeric fields between anchors. It produced **25,069
+field rules for 5,652 items**; recorded validation errors describe how well each
+rule fits available measurements. Stat IDs are categorical, missing fields in a
+captured row mean zero, and missing rows remain unknown. Reborn armor also needs
+separate handling: item 5016 at level 60 has raw armor 226 but displayed Reborn
+armor 54. Estimates and fallback values remain distinguishable from captures.
+
+Read [the scaling findings, formula and limitations](info/items/scaling.md), or
+inspect [the measured data and rules](data/scaling/).
 
 ## What is shared
 
