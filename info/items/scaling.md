@@ -16,6 +16,36 @@ item/level rows** from three sparse captures. There were 151,995 input rows,
 has **100 items at levels 1..60**. Earlier notes describing 8,490 items cover an
 older single capture, not this merged set.
 
+## Findings you can check directly
+
+The dense capture shows why a single straight line is insufficient. These are
+**measured rows for item 5016**, decoded from
+[scaledump-reference.json](../../data/scaling/scaledump-reference.json):
+
+| Requested level | RequiredLevel | ItemArmor | ItemArmorReborn | Spirit (stat 6) | Spell power (stat 45) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 34 | 31 | 122 | 39 | 6 | 7 |
+| 35 | 30 | 125 | 40 | 9 | 11 |
+| 36 | 32 | 128 | 40 | 9 | 11 |
+| 51 | 47 | 183 | 51 | 9 | 11 |
+| 52 | 48 | 187 | 50 | 9 | 11 |
+| 60 | 55 | 226 | 54 | 11 | 13 |
+
+Stats can jump and then stay flat, and captured fields can decrease between
+adjacent levels. Requested scaling level is also different from the returned
+RequiredLevel. Preserve these observations; do not smooth them away or assume
+all fields increase monotonically. These rows alone do not establish the cause
+of those changes or prove a universal server formula.
+
+Rules work per field, using measured reference curves; they are a reconstruction
+method, not recovered server source. Of the 25,069 rules, 58 have no validation
+samples. A zero error without samples is not evidence of accuracy. Even a scored
+rule is checked against available anchors, not every missing level.
+
+The released scaling data lives in `data/scaling/*.json` and the original Lua
+captures. The historical guide's proposed `app.item_scaling_dumps` table is a
+future design, not an existing table in these database snapshots.
+
 ## Capturing
 
 Install `Inteface/Addons/Scaledump` as `Interface/AddOns/Scaledump` and use:
