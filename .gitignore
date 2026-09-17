@@ -8,6 +8,7 @@ data/*.db
 data/*.db-*
 data/*.gz
 data/*.part*
+data/*.assembling
 data/*.partial*
 public/
 __pycache__/
