@@ -52,6 +52,9 @@ report += ['', '## Files and checksums', '', '| File | Bytes | SHA-256 |', '| --
 for file in manifest['files']:
     report.append(f"| `{file['file']}` | {file['bytes']:,} | `{file['sha256']}` |")
     report.append(f"| `{file['compressedFile']}` | {file['compressedBytes']:,} | `{file['compressedSha256']}` |")
+    for part in file.get('compressedParts', []):
+        report.append(f"| `{part['file']}` | {part['bytes']:,} | `{part['sha256']}` |")
+report += ['', 'The large helper gzip is downloaded as numbered byte parts; the whole-gzip hash above verifies the reconstructed file. `scripts/unpack-data.py` joins and verifies the parts automatically.', '']
 report += ['', 'See [the complete dictionary](schema/README.md), [manifest](../data/manifest.json), and [known limitations](known-gaps.md).', '']
 (root / 'info/snapshot.md').write_text('\n'.join(report), encoding='utf-8')
 game.close()

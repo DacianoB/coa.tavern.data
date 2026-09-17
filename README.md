@@ -47,7 +47,7 @@ databases total about **212 MB to download / 7.23 GB unpacked**. See the
 | Location / download | Contents |
 | --- | --- |
 | `game.db.gz` | All selected legacy game tables: items, spells, talents, classes, races, zones and other catalogs |
-| `community-game.db.gz` | Stored tooltips, parsed effects, item versions, set/spell links and AtlasLoot relationships |
+| `community-game.db.gz.part01` ... `.part07` | Stored tooltips, parsed effects, item versions, set/spell links and AtlasLoot relationships; seven parts of one compressed database |
 | `manifest.json` | Complete DB table/column structure, original types, keys, row counts and hashes |
 | `raw-savedvariables.zip` | Original item scrape Lua files, including the separately identified broken-save `.luax` |
 | `raw-client-dbc.zip` | 38 extracted client DBC files in their original binary format |
@@ -68,13 +68,17 @@ it is not silently repaired or presented as a valid import.
 
 ## Open the database files
 
-Download both `.db.gz` files and their matching `manifest.json` from the same
-release into `data/`. Decompress with your archive utility, or verify/decompress
-with Python 3.11+:
+Download `game.db.gz`, **all seven** `community-game.db.gz.part01` through
+`.part07` files, and their matching `manifest.json` from the same release into
+`data/`. Join, verify and decompress with Python 3.11+:
 
 ```bash
 python scripts/unpack-data.py
 ```
+
+The numbered files are consecutive byte parts of one gzip archive. The command
+joins them and verifies both the parts and the complete database. See
+[the download format](info/schema/sqlite-format.md#numbered-download-parts).
 
 Open `game.db` or `community-game.db` in a SQLite viewer. See
 [SQL examples](examples/items.sql) and [the item reconstruction notes](info/items/rebuilding-items.md).

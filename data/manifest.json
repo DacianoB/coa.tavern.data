@@ -13901,7 +13901,44 @@
       "sha256": "4d2e56eee43176f984a1aa27b548149319f6a779e98fa56ac34aa5d7d3613ac9",
       "compressedFile": "community-game.db.gz",
       "compressedBytes": 173600566,
-      "compressedSha256": "22d4f742ebd920c69d133c623261086493d18573357364a5bc0640d55052448b"
+      "compressedSha256": "22d4f742ebd920c69d133c623261086493d18573357364a5bc0640d55052448b",
+      "compressedParts": [
+        {
+          "file": "community-game.db.gz.part01",
+          "bytes": 25165824,
+          "sha256": "35c8eaf7f208ea5b65cd842c9edc784167a550bc03c6583ac96a9f4ed02c870e"
+        },
+        {
+          "file": "community-game.db.gz.part02",
+          "bytes": 25165824,
+          "sha256": "0c842b91a93dd99b84fd6646f1ede1c932d3b826f92097f855cd5d200d100eb0"
+        },
+        {
+          "file": "community-game.db.gz.part03",
+          "bytes": 25165824,
+          "sha256": "9f14cac3f0f26858638002f026a748dc550de6aeea486b6a173b16a373938944"
+        },
+        {
+          "file": "community-game.db.gz.part04",
+          "bytes": 25165824,
+          "sha256": "d5d2114b99690011b43ced4aaedb5e76ed00f374284750b0a79366ddb2e8e385"
+        },
+        {
+          "file": "community-game.db.gz.part05",
+          "bytes": 25165824,
+          "sha256": "53b3dfc237cd47cc4ea13a306ee8c9547a6b007634e71949dfbcc58585e50f9e"
+        },
+        {
+          "file": "community-game.db.gz.part06",
+          "bytes": 25165824,
+          "sha256": "b99789fdc186f4a70cfbe6221aee67e4bac32d91b4a689b5e3db7752aae0bee0"
+        },
+        {
+          "file": "community-game.db.gz.part07",
+          "bytes": 22605622,
+          "sha256": "892d3b3206d32e03ee84bdbeb7b99fe5a7b82cbd860e200bfc73cd2e5068f493"
+        }
+      ]
     }
   ],
   "excludedTables": [

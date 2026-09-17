@@ -19,6 +19,25 @@ Use `ATTACH DATABASE 'data/community-game.db' AS derived` to join the files.
 SQLite has no PostgreSQL `game` schema unless you explicitly attach using that
 alias. Do not rename the legacy source schema to accommodate the export.
 
+## Numbered download parts
+
+The initial release distributes `community-game.db.gz` as seven consecutive
+byte parts, `community-game.db.gz.part01` through `.part07`. Each is at most
+24 MiB. Download all parts and the matching manifest into `data/`, then run
+`python scripts/unpack-data.py`. It checks each part, joins them in manifest
+order, verifies the original gzip hash, and decompresses the complete database.
+Individual parts are not independently decompressible archives.
+
+The manifest's optional `compressedParts` array records each part's filename,
+byte count and SHA-256. `compressedFile` and `compressedSha256` still describe
+the reconstructed gzip. Splitting changes download packaging, not any database
+bytes. The separate `game.db.gz` remains a single download.
+
+The publication used `python scripts/package-download-parts.py` after export.
+This preserves the complete local gzip and adds parts for compressed files over
+100 MiB. Numbered parts were used because the large single-file upload repeatedly
+slowed or retried. Raw collection ZIPs are independent archives, not these parts.
+
 ## Values and types
 
 - `smallint`, `integer`, `bigint`, `oid` become INTEGER; integer text is parsed

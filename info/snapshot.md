@@ -149,5 +149,15 @@ None.
 | `game.db.gz` | 38,195,155 | `84dec0f9573c5be99f298b41d501ddd1a27d09dc11988fbb12be5687e7492d11` |
 | `community-game.db` | 6,907,219,968 | `4d2e56eee43176f984a1aa27b548149319f6a779e98fa56ac34aa5d7d3613ac9` |
 | `community-game.db.gz` | 173,600,566 | `22d4f742ebd920c69d133c623261086493d18573357364a5bc0640d55052448b` |
+| `community-game.db.gz.part01` | 25,165,824 | `35c8eaf7f208ea5b65cd842c9edc784167a550bc03c6583ac96a9f4ed02c870e` |
+| `community-game.db.gz.part02` | 25,165,824 | `0c842b91a93dd99b84fd6646f1ede1c932d3b826f92097f855cd5d200d100eb0` |
+| `community-game.db.gz.part03` | 25,165,824 | `9f14cac3f0f26858638002f026a748dc550de6aeea486b6a173b16a373938944` |
+| `community-game.db.gz.part04` | 25,165,824 | `d5d2114b99690011b43ced4aaedb5e76ed00f374284750b0a79366ddb2e8e385` |
+| `community-game.db.gz.part05` | 25,165,824 | `53b3dfc237cd47cc4ea13a306ee8c9547a6b007634e71949dfbcc58585e50f9e` |
+| `community-game.db.gz.part06` | 25,165,824 | `b99789fdc186f4a70cfbe6221aee67e4bac32d91b4a689b5e3db7752aae0bee0` |
+| `community-game.db.gz.part07` | 22,605,622 | `892d3b3206d32e03ee84bdbeb7b99fe5a7b82cbd860e200bfc73cd2e5068f493` |
+
+The large helper gzip is downloaded as numbered byte parts; the whole-gzip hash above verifies the reconstructed file. `scripts/unpack-data.py` joins and verifies the parts automatically.
+
 
 See [the complete dictionary](schema/README.md), [manifest](../data/manifest.json), and [known limitations](known-gaps.md).

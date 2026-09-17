@@ -14,6 +14,11 @@ Each raw ZIP is checked for CRC integrity; raw/manifest.json records the SHA-256
 of each archive and each original member. No repair or normalization is applied
 to the raw bytes. The broken-save `.luax` is identified explicitly.
 
+The numbered download parts were joined using the published unpack script.
+Both databases were reconstructed from the release download files and their
+SHA-256 hashes matched the verified snapshots. The documented item inspection
+command and SQL examples also ran successfully.
+
 No new in-game crawl was performed. A complete fresh PostgreSQL import was not
 run during packaging. The source database was read only and the source project's
 tracked files were unchanged. The optional base importer rejects populated tables.
