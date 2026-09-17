@@ -39,6 +39,11 @@ inspect [the measured data and rules](data/scaling/).
 
 ## What is shared
 
+The initial snapshot contains **93 tables**, including **559,994 item records**,
+**204,535 spell records** and **473,340 stored tooltips**. The two compressed
+databases total about **212 MB to download / 7.23 GB unpacked**. See the
+[snapshot findings](info/snapshot.md) for exact counts, coverage and checksums.
+
 | Location / download | Contents |
 | --- | --- |
 | `game.db.gz` | All selected legacy game tables: items, spells, talents, classes, races, zones and other catalogs |

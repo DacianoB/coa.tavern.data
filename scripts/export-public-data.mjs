@@ -69,7 +69,7 @@ try {
         if (!batch.rows.length) break;
         for (const row of batch.rows) insert.run(...row.map((value,i)=>convert(value,columns[i])));
         rows += batch.rows.length;
-        if (rows % 100000 === 0) console.log(`${logicalSchema}.${table}: ${rows} rows exported...`);
+        if (rows % 10000 === 0) console.log(`${logicalSchema}.${table}: ${rows} rows exported...`);
       }
       await client.query('CLOSE public_export_cursor');
       const sourceCount = (await client.query(`SELECT count(*)::text AS count FROM ${quote(schema)}.${quote(table)}`)).rows[0].count;

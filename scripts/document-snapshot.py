@@ -30,7 +30,7 @@ queries = {
     'Items without any stored tooltip row': 'SELECT count(*) FROM aowow_items i LEFT JOIN derived.item_tooltips t ON t.item_id=i.id WHERE t.item_id IS NULL',
     'Stored tooltip rows without a matching item': 'SELECT count(*) FROM derived.item_tooltips t LEFT JOIN aowow_items i ON i.id=t.item_id WHERE i.id IS NULL',
     'Parsed effect rows without a matching item': 'SELECT count(*) FROM derived.item_tooltip_effects t LEFT JOIN aowow_items i ON i.id=t.item_id WHERE i.id IS NULL',
-    'Named items with iconId=0 or a missing icon reference': "SELECT count(*) FROM aowow_items i LEFT JOIN aowow_icons icon ON icon.id=i.iconId WHERE i.name_loc0 IS NOT NULL AND i.name_loc0 <> 'Item #' || i.id AND (i.iconId=0 OR icon.id IS NULL)",
+    'Named items with iconId=0 or a missing icon reference': "SELECT count(*) FROM aowow_items i LEFT JOIN aowow_icons icon ON icon.id=i.iconId WHERE i.name_loc0 IS NOT NULL AND trim(i.name_loc0)<>'' AND i.name_loc0 <> 'Item #' || i.id AND (i.iconId=0 OR icon.id IS NULL)",
 }
 report = ['# Published snapshot findings', '', f"Export started at **{manifest['exportedAt']}** (UTC). This is the export time, not a claim that the game was scraped at that time.", '',
           f"The release contains **{len(counts)} tables** with **{sum(counts.values()):,} rows**, including empty tables. Rows across related tables are not unique game entities.", '',
