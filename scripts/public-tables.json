@@ -1,0 +1,26 @@
+{
+  "game": [
+    "aowow_achievement", "aowow_achievementcategory", "aowow_achievementcriteria", "aowow_areatrigger",
+    "aowow_character_advancement", "aowow_character_advancement_class_types", "aowow_character_advancement_tab_types",
+    "aowow_chr_specs", "aowow_classes", "aowow_coa_builder_class_settings", "aowow_coa_builder_classes",
+    "aowow_coa_builder_entries", "aowow_coa_builder_realms", "aowow_coa_builder_tabs", "aowow_coa_specs",
+    "aowow_creature", "aowow_creature_sounds", "aowow_creature_waypoints", "aowow_currencies",
+    "aowow_declinedword", "aowow_declinedwordcases", "aowow_emotes", "aowow_emotes_aliasses", "aowow_emotes_sounds",
+    "aowow_events", "aowow_factions", "aowow_factiontemplate", "aowow_glyphproperties", "aowow_holidays", "aowow_icons",
+    "aowow_item_stats", "aowow_itemenchantment", "aowow_itemenchantmentcondition", "aowow_itemextendedcost",
+    "aowow_itemlimitcategory", "aowow_itemrandomenchant", "aowow_itemrandomproppoints", "aowow_items", "aowow_items_sounds",
+    "aowow_itemset", "aowow_lock", "aowow_loot_link", "aowow_mails", "aowow_objects", "aowow_pet",
+    "aowow_quests", "aowow_quests_startend", "aowow_races", "aowow_races_sounds",
+    "aowow_scalingstatdistribution", "aowow_scalingstatvalues", "aowow_screeneffect_sounds", "aowow_shapeshiftforms",
+    "aowow_skill_line_abilities", "aowow_skillline", "aowow_sounds", "aowow_sounds_files", "aowow_source",
+    "aowow_spawns", "aowow_spawns_override", "aowow_specialization_slots", "aowow_spell", "aowow_spell_owners",
+    "aowow_spell_sounds", "aowow_spelldifficulty", "aowow_spellfocusobject", "aowow_spelloverride", "aowow_spellrange",
+    "aowow_spellvariables", "aowow_talent_tree_node_ranks", "aowow_talent_tree_nodes", "aowow_talent_tree_tabs", "aowow_talents",
+    "aowow_taxinodes", "aowow_taxipath", "aowow_titles", "aowow_totemcategory", "aowow_zones", "aowow_zones_sounds"
+  ],
+  "app": [
+    "atlasloot_entries", "atlasloot_table_paths", "atlasloot_tables", "enchantment_spell_links",
+    "item_spell_links", "item_tooltip_effects", "item_tooltips", "item_versions", "itemset_item_links", "itemset_spell_links",
+    "resolved_class_specs", "spell_created_item_links", "spell_teach_links", "spell_trigger_links"
+  ]
+}

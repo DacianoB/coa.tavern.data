@@ -1,0 +1,9 @@
+* text=auto
+*.db binary
+*.gz binary
+*.zip binary
+*.dbc binary
+# Preserve capture and data bytes when users clone the archive.
+*.lua -text
+*.luax -text
+*.json -text

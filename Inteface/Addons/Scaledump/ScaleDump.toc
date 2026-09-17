@@ -1,0 +1,6 @@
+## Interface: 30300
+## Title: ScaleDump
+## SavedVariables: ScaleDumpDB
+ScaleDump.lua
+AscensionScraperKnownItemIDs.lua
+ScaleDump.lua

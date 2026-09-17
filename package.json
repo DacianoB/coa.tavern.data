@@ -1,0 +1,32 @@
+{
+  "name": "coa.tavern.data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional command-line tools for the CoA raw data archive; no application",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "data:export": "node scripts/export-public-data.mjs",
+    "data:verify": "node scripts/verify-data.mjs",
+    "game:schema": "tsx scripts/init-game-schema.ts",
+    "game:check": "tsx scripts/check-game-db.ts",
+    "game:import-ascension": "tsx scripts/import-ascension-client-data.ts",
+    "game:import-scraper": "tsx scripts/import-ascension-scraper.ts",
+    "game:split-scraper": "tsx scripts/split-ascension-scraper-lua.ts",
+    "game:addon-known-items": "tsx scripts/generate-ascension-known-items.ts",
+    "game:addon-missing-items": "tsx scripts/generate-ascension-known-items.ts --missing-tooltips",
+    "game:scaledump": "tsx scripts/process-scaledump.ts --out data/scaling",
+    "game:import-coa-talents": "tsx scripts/import-coa-exporter-talents.ts",
+    "game:import-coa-scrape": "tsx scripts/import-coa-exporter-scrape.ts",
+    "atlasloot:import": "tsx scripts/import-atlasloot.ts",
+    "game:icons": "tsx scripts/sync-game-icons.ts",
+    "game:backup": "tsx scripts/backup-game-db.ts",
+    "game:history": "tsx scripts/game-import-history.ts",
+    "data:docs": "python scripts/document-snapshot.py"
+  },
+  "dependencies": {
+    "pg": "8.20.0",
+    "tsx": "4.22.0"
+  }
+}

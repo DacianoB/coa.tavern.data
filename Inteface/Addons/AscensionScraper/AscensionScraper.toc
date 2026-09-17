@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: AscensionScraper
+## Notes: Scrape Ascension item and spell data into SavedVariables for CoA Tavern import.
+## Author: Codex
+## Version: 1.16.0
+## SavedVariables: AscensionScraperDB
+
+KnownItems.lua
+AscensionScraper.lua

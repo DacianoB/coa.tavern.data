@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: AscensionScraperAuto
+## Notes: Automates chunked AscensionScraper known-item tooltip passes with reload/resume saves.
+## Author: Codex
+## Version: 1.0.0
+## RequiredDeps: AscensionScraper
+## SavedVariables: AscensionScraperAutoDB
+
+AscensionScraperAuto.lua

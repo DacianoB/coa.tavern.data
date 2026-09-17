@@ -1,0 +1,4 @@
+{
+  "note": "Superseded by raw/manifest.json, which includes these files as byte-preserving downloadable archive members.",
+  "manifest": "../../raw/manifest.json"
+}

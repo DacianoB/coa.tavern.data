@@ -1,0 +1,617 @@
+{
+  "repository": "https://github.com/DacianoB/coatavern",
+  "commit": "4a34030e2523fbc36cde440025ac89ed55f92c7c",
+  "note": "Hashes describe copied source bytes before documented adaptations. Historical Markdown has a context banner and generalized personal paths. Files are references/data, not an application.",
+  "files": [
+    {
+      "source": "scripts/extract-ascension-mpq.py",
+      "published": "scripts/extract-ascension-mpq.py",
+      "sha256": "1eb587816d46136ffcfb4b46e447310cdb320fee79610883d26a35fbac25c6fd"
+    },
+    {
+      "source": "scripts/init-game-schema.ts",
+      "published": "scripts/init-game-schema.ts",
+      "sha256": "95c0a95c3c91bcc1760f151acbb68a1b5e156ff6988d49905d417a896f3614c6"
+    },
+    {
+      "source": "scripts/import-ascension-client-data.ts",
+      "published": "scripts/import-ascension-client-data.ts",
+      "sha256": "261331855ce3e8aa4d2e691d8156158c2a0a9b52143d57b0d120c0c7ade8ae1c"
+    },
+    {
+      "source": "scripts/import-ascension-scraper.ts",
+      "published": "scripts/import-ascension-scraper.ts",
+      "sha256": "445b3b4d9aa24f3a523878fc198b43583fbfa2e913c30a148d6fbb74877ce5e1"
+    },
+    {
+      "source": "scripts/split-ascension-scraper-lua.ts",
+      "published": "scripts/split-ascension-scraper-lua.ts",
+      "sha256": "eff9200db073e630bf571e1b80564e42f1ca56924e82b35e576a7f05c161cd06"
+    },
+    {
+      "source": "scripts/generate-ascension-known-items.ts",
+      "published": "scripts/generate-ascension-known-items.ts",
+      "sha256": "695a298d4744161b16a7555e27a46399ca319b28251789dd3a78593008c1f00a"
+    },
+    {
+      "source": "scripts/process-scaledump.ts",
+      "published": "scripts/process-scaledump.ts",
+      "sha256": "28a72e439387a69415b87329d5032ff8a7984fee5360e32f9debd0762719a313"
+    },
+    {
+      "source": "scripts/import-coa-exporter-talents.ts",
+      "published": "scripts/import-coa-exporter-talents.ts",
+      "sha256": "5108ba1eebd31f63bf64b587240faa447fcebe67576e3f7f830f6b2f30c2ab96"
+    },
+    {
+      "source": "scripts/import-coa-exporter-scrape.ts",
+      "published": "scripts/import-coa-exporter-scrape.ts",
+      "sha256": "54fcbcfe0c2d03947cbf3782db0bd3bf85f01b807e596815b9d6434f51644ffe"
+    },
+    {
+      "source": "scripts/import-atlasloot.ts",
+      "published": "scripts/import-atlasloot.ts",
+      "sha256": "30bf9d01c08be3ce769a39b0a5930faa7e27760225af9a618fec559b7d27601a"
+    },
+    {
+      "source": "scripts/sync-game-icons.ts",
+      "published": "scripts/sync-game-icons.ts",
+      "sha256": "e28329b075b994cb68df464c6fdd5291e613e91beff8cc61d5074f8e83e5361f"
+    },
+    {
+      "source": "scripts/check-game-db.ts",
+      "published": "scripts/check-game-db.ts",
+      "sha256": "c8c5e977510af83ba99ee40ec6f2e0041228bb563ccfc923d94949c9841ae901"
+    },
+    {
+      "source": "scripts/backup-game-db.ts",
+      "published": "scripts/backup-game-db.ts",
+      "sha256": "6bb08bc3b110ad3b824ecaf82274bdeb562aa2e004f522595aad509318167403"
+    },
+    {
+      "source": "scripts/game-import-history.ts",
+      "published": "scripts/game-import-history.ts",
+      "sha256": "d992a6134b9748101f9d63f7f12c5e6b2a6dc94ed59a89a44e83af6beb510344"
+    },
+    {
+      "source": "scripts/lib/game-db-backup.ts",
+      "published": "scripts/lib/game-db-backup.ts",
+      "sha256": "117afb71c29e362b18186cd1b5c90b113a172986e8f9ff41b9c6d6ae6728cc0c"
+    },
+    {
+      "source": "scripts/lib/import-history.ts",
+      "published": "scripts/lib/import-history.ts",
+      "sha256": "cf32ccce3822afcd01eee0e8b8020cc9b93325315ee051080e45c7173318b4d8"
+    },
+    {
+      "source": "src/data/scaledump-compact.json",
+      "published": "data/scaling/scaledump-compact.json",
+      "sha256": "4aa6e3e8c773149ea27bbc5c7b372c33bcc035f161ca7cc4c92a3594a1ced8eb"
+    },
+    {
+      "source": "src/data/scaledump-reference.json",
+      "published": "data/scaling/scaledump-reference.json",
+      "sha256": "c55960a95b340523a7360f0215e6126b4c345dfaa4b31b1d5625deae1f480028"
+    },
+    {
+      "source": "src/data/scaledump-results.json",
+      "published": "data/scaling/scaledump-results.json",
+      "sha256": "4e284a812a763d8e8cba295acc94e40be92b697d395a3e9bc81210009bedc497"
+    },
+    {
+      "source": "src/data/scaledump-rules.json",
+      "published": "data/scaling/scaledump-rules.json",
+      "sha256": "7f982a4ee6688dedd8eaf5f5c9f0e9848f973976a4b0dd56ee07705f43de6452"
+    },
+    {
+      "source": "src/lib/item-scaling.ts",
+      "published": "reference/tavern/src/lib/item-scaling.ts",
+      "sha256": "7072fd510cc33161f959868cb8a380679c46ca296dbb124b43b78e7f53273d5f"
+    },
+    {
+      "source": "src/lib/item-scaling.test.ts",
+      "published": "reference/tavern/src/lib/item-scaling.test.ts",
+      "sha256": "e7374763a0e35c3c52aaeef9639f8e181ea3f34298f69245c8bc7ba59049b4bf"
+    },
+    {
+      "source": "src/server/game-data/types.ts",
+      "published": "reference/tavern/src/server/game-data/types.ts",
+      "sha256": "1e08d76da0549d7081b468aef83ad29a4d7dd895e1fe7aa13f89aaec54a298b4"
+    },
+    {
+      "source": "src/server/game-data/achievements.ts",
+      "published": "reference/tavern/src/server/game-data/achievements.ts",
+      "sha256": "7c1f0446a46f540bb217f9c09178880f67ec51354b75a43d46fb7688f85156c3"
+    },
+    {
+      "source": "src/server/game-data/build-planner.ts",
+      "published": "reference/tavern/src/server/game-data/build-planner.ts",
+      "sha256": "f5022d54371f0cd9e3838f34fc7c0bf7bf6bbd07b5a2bb8c2fdb3222d55342e1"
+    },
+    {
+      "source": "src/server/game-data/categories.ts",
+      "published": "reference/tavern/src/server/game-data/categories.ts",
+      "sha256": "59b7994d81a8ed3d89bb3a1e63e856c6699ebd362d34e50cddb4bf1d88dfdab4"
+    },
+    {
+      "source": "src/server/game-data/classes.ts",
+      "published": "reference/tavern/src/server/game-data/classes.ts",
+      "sha256": "b2b858461c0117a0d46d0dcf9d0c43cc026fa581a373c821290e0fe6ffee42bc"
+    },
+    {
+      "source": "src/server/game-data/currencies.ts",
+      "published": "reference/tavern/src/server/game-data/currencies.ts",
+      "sha256": "a672305aa13dc6f53bb13dfb165833280a3c825bc1a587dab2308e9c5d49291c"
+    },
+    {
+      "source": "src/server/game-data/db.ts",
+      "published": "reference/tavern/src/server/game-data/db.ts",
+      "sha256": "1d95c875b882cbee3889394dad377f18d353d52587f8186473bc8f388e402fa2"
+    },
+    {
+      "source": "src/server/game-data/emotes.ts",
+      "published": "reference/tavern/src/server/game-data/emotes.ts",
+      "sha256": "5092e9c73ae2063500aba91f5a7145c20ca3a85d3cf1add71e4a233cc6df23f0"
+    },
+    {
+      "source": "src/server/game-data/enchantments.ts",
+      "published": "reference/tavern/src/server/game-data/enchantments.ts",
+      "sha256": "3a67334545d1bc7e9c5dea9fd8efc5384b184027b4a563575e2833bc83521a1e"
+    },
+    {
+      "source": "src/server/game-data/events.ts",
+      "published": "reference/tavern/src/server/game-data/events.ts",
+      "sha256": "42306cc649a8103e5e16886d0492c9c35a9df1d77e7054920d22cd26ae945ead"
+    },
+    {
+      "source": "src/server/game-data/exil-reference.ts",
+      "published": "reference/tavern/src/server/game-data/exil-reference.ts",
+      "sha256": "4c143742f7940d73941eab8b2ec2f081d315a752697051c94e97534659de8ba6"
+    },
+    {
+      "source": "src/server/game-data/factions.ts",
+      "published": "reference/tavern/src/server/game-data/factions.ts",
+      "sha256": "00c11a50e2864eced6a63091e3a1b21851a46b3d1b5d76bf8851ddf7c0c00560"
+    },
+    {
+      "source": "src/server/game-data/icon-url.ts",
+      "published": "reference/tavern/src/server/game-data/icon-url.ts",
+      "sha256": "4c78e861a19ea5272b34213a0f46264766967dafa1f3487636bc40dc0ca3e15a"
+    },
+    {
+      "source": "src/server/game-data/icons.ts",
+      "published": "reference/tavern/src/server/game-data/icons.ts",
+      "sha256": "44eefa6b0ccb3867c34b4573338a4dc98a52d72aaa6049a0c02487bc2d79f89b"
+    },
+    {
+      "source": "src/server/game-data/item-sets.ts",
+      "published": "reference/tavern/src/server/game-data/item-sets.ts",
+      "sha256": "77b46fe497bb722e2ceecdba49928852edcff4053ae86bf4b921cd71e498d9c8"
+    },
+    {
+      "source": "src/server/game-data/items-list.ts",
+      "published": "reference/tavern/src/server/game-data/items-list.ts",
+      "sha256": "9f0acb341c4d4a7bfdb8bfdcbc3d2ac61da2c4286570f488396f10a7c19ca874"
+    },
+    {
+      "source": "src/server/game-data/items.ts",
+      "published": "reference/tavern/src/server/game-data/items.ts",
+      "sha256": "cd26a691b0cbd5f6929749656494693439abc883427dfdc8f846bcd9a0fd7c7c"
+    },
+    {
+      "source": "src/server/game-data/mails.ts",
+      "published": "reference/tavern/src/server/game-data/mails.ts",
+      "sha256": "c5ef2d375b024d560534da4adbff1e8bcfb53df7ffd3213b59ce38c6d0cafefe"
+    },
+    {
+      "source": "src/server/game-data/npcs.ts",
+      "published": "reference/tavern/src/server/game-data/npcs.ts",
+      "sha256": "fe110d5a489e7bcc139e1a1d949bc04bbe9e15f3eb9da841252afef0b19cea07"
+    },
+    {
+      "source": "src/server/game-data/objects.ts",
+      "published": "reference/tavern/src/server/game-data/objects.ts",
+      "sha256": "9859d6712499ffb72e3c5902b24167608e367933f0c9e6fc45879f51bfe46a02"
+    },
+    {
+      "source": "src/server/game-data/pets.ts",
+      "published": "reference/tavern/src/server/game-data/pets.ts",
+      "sha256": "d5ab9aad2d211f6f4d7ceb719c2e4d7ee855a64e0edde4c0e4b3ec809feb1526"
+    },
+    {
+      "source": "src/server/game-data/professions.ts",
+      "published": "reference/tavern/src/server/game-data/professions.ts",
+      "sha256": "12a1bcb10fb9a2b422840ea5cf4192ff763c4a12d91342141f2b0e88a42b7b2c"
+    },
+    {
+      "source": "src/server/game-data/quests.ts",
+      "published": "reference/tavern/src/server/game-data/quests.ts",
+      "sha256": "9d454ca1543394ca6733eee4446873cb8af65e47bdda202523b2c08f67839fe3"
+    },
+    {
+      "source": "src/server/game-data/races.ts",
+      "published": "reference/tavern/src/server/game-data/races.ts",
+      "sha256": "e7fab944defebce1fef710d82a6458a9822b3b49182a8d4f0daba1e71d930027"
+    },
+    {
+      "source": "src/server/game-data/repository.ts",
+      "published": "reference/tavern/src/server/game-data/repository.ts",
+      "sha256": "e3c61a5c62cb3236784046923fd6e81b3962d42e7d7b09c80a7115f1b3df4f11"
+    },
+    {
+      "source": "src/server/game-data/search.ts",
+      "published": "reference/tavern/src/server/game-data/search.ts",
+      "sha256": "1b98c22aa0ae2fa48ea8ca46bb7f6902da5aa372c9547f50c3764b31c021cbd3"
+    },
+    {
+      "source": "src/server/game-data/skills.ts",
+      "published": "reference/tavern/src/server/game-data/skills.ts",
+      "sha256": "44c81208b1d3426d4db1add3445c89e6eb92c2be333d0fa0308d5ec287cb1adb"
+    },
+    {
+      "source": "src/server/game-data/sounds.ts",
+      "published": "reference/tavern/src/server/game-data/sounds.ts",
+      "sha256": "66bc0de321bfec448fffb7f4795489a0ffbfda8e512189747223e4f19a7a9bfd"
+    },
+    {
+      "source": "src/server/game-data/spell-decoding.ts",
+      "published": "reference/tavern/src/server/game-data/spell-decoding.ts",
+      "sha256": "0a8c11d0cc6ba376101d78303546f187e785a9361afe6496584a24c3a6ff7abf"
+    },
+    {
+      "source": "src/server/game-data/spells.ts",
+      "published": "reference/tavern/src/server/game-data/spells.ts",
+      "sha256": "452f76b833f502881d78f6a56f62a0026c83a3d732ea850ecc671d530f3bf7e3"
+    },
+    {
+      "source": "src/server/game-data/talents.ts",
+      "published": "reference/tavern/src/server/game-data/talents.ts",
+      "sha256": "51369808dbbee019342edfc1a91de867b352afa25e1a93f1617663bfbfd19868"
+    },
+    {
+      "source": "src/server/game-data/titles.ts",
+      "published": "reference/tavern/src/server/game-data/titles.ts",
+      "sha256": "1abbd67b7f568524e82685f8bc8f3aa6f47d4d5ce7ae7590d7d0c2467514832f"
+    },
+    {
+      "source": "src/server/game-data/types.ts",
+      "published": "reference/tavern/src/server/game-data/types.ts",
+      "sha256": "1e08d76da0549d7081b468aef83ad29a4d7dd895e1fe7aa13f89aaec54a298b4"
+    },
+    {
+      "source": "src/server/game-data/visibility.ts",
+      "published": "reference/tavern/src/server/game-data/visibility.ts",
+      "sha256": "60c108c416531f53f01aa2f0efa296255ba98ac2efbe2519d4e2fe708884ebad"
+    },
+    {
+      "source": "src/server/game-data/zones.ts",
+      "published": "reference/tavern/src/server/game-data/zones.ts",
+      "sha256": "33f0057a94738f31d86c2ad9ec118b621ca8939b2b5a3c59c29b932a97e32ac3"
+    },
+    {
+      "source": "prisma/migrations/0002_builder_read_functions/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0002_builder_read_functions/migration.sql",
+      "sha256": "1bdd55cae53a4938fa8d514452bcdb0465182c05b1926b7b8fd53d2ace9b3667"
+    },
+    {
+      "source": "prisma/migrations/0003_trim_builder_spell_payload/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0003_trim_builder_spell_payload/migration.sql",
+      "sha256": "4ff95dce88aa4f377fa47867cda28134835e719bce7e0e6da0b822d864ee9378"
+    },
+    {
+      "source": "prisma/migrations/0004_omit_zero_builder_spell_fields/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0004_omit_zero_builder_spell_fields/migration.sql",
+      "sha256": "91ec11a86d88e9334de10eea4bbc8726a8aa615935595c941f1e3218f215d384"
+    },
+    {
+      "source": "prisma/migrations/0005_game_data_read_models/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0005_game_data_read_models/migration.sql",
+      "sha256": "943a105029b0bed58afdc32d76d42fa3a401baaf8947c15baf05ed369b58803a"
+    },
+    {
+      "source": "prisma/migrations/0006_tune_read_model_search_and_lists/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0006_tune_read_model_search_and_lists/migration.sql",
+      "sha256": "714450e35e991029247bd795829b712c12f857d1fa11b5011ce01b99cdbcde51"
+    },
+    {
+      "source": "prisma/migrations/0007_precomputed_entity_counts/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0007_precomputed_entity_counts/migration.sql",
+      "sha256": "e3e2d8e71a9cd002833696ee624074c5e2a655dc0bc3262c5cff03eed02f49f9"
+    },
+    {
+      "source": "prisma/migrations/0008_dynamic_fast_list_function/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0008_dynamic_fast_list_function/migration.sql",
+      "sha256": "e9b177264dca9c3ea6009d1793f7ad0dbcb8f95365b327fedec02a5a3ebe35ec"
+    },
+    {
+      "source": "prisma/migrations/0009_filter_placeholder_items/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0009_filter_placeholder_items/migration.sql",
+      "sha256": "55803ecf3184171718621234746a927470a3f79102bb0a79a401fee1e4070c35"
+    },
+    {
+      "source": "prisma/migrations/0010_filter_item_name_fragments/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0010_filter_item_name_fragments/migration.sql",
+      "sha256": "51cecb330ef4975ded0df3c78f1787d9290b2740cc4e0f915d89dcc128483efb"
+    },
+    {
+      "source": "prisma/migrations/0011_item_tooltip_effects/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0011_item_tooltip_effects/migration.sql",
+      "sha256": "24fa0f192d0fd5c1c9715481bff50cb1ffb571ed822f97af8a3760fced89f089"
+    },
+    {
+      "source": "prisma/migrations/0012_item_tooltips/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0012_item_tooltips/migration.sql",
+      "sha256": "9535f919a18e46c8862dff4290e03606de4ca17a89237a008bed38a5439963d3"
+    },
+    {
+      "source": "prisma/migrations/0013_fast_item_listing_indexes/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0013_fast_item_listing_indexes/migration.sql",
+      "sha256": "aa52e16eaf1b512cc8734fc3b7a6a6b00c4c4bc0fc99cc44fd13f06a671836d4"
+    },
+    {
+      "source": "prisma/migrations/0014_atlasloot_import/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0014_atlasloot_import/migration.sql",
+      "sha256": "594dea991f14edd7dd91865f19171147e71f95e7fe67421542a688e7bcc4e991"
+    },
+    {
+      "source": "prisma/migrations/0015_itemset_tooltip_links/migration.sql",
+      "published": "reference/tavern/prisma/migrations/0015_itemset_tooltip_links/migration.sql",
+      "sha256": "e5fbfc5413841d223c3f1ae9cbebde961ec823ab81d89d6fd77772e88202dc36"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraper/AscensionScraper.lua",
+      "published": "Inteface/Addons/AscensionScraper/AscensionScraper.lua",
+      "sha256": "3e3492e24c4a24ab43f07c5d433046134af370081c1d6ac903e368c7c43c0160"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraper/AscensionScraper.toc",
+      "published": "Inteface/Addons/AscensionScraper/AscensionScraper.toc",
+      "sha256": "234e7d5dbda38cb8f70115d9aa09789d2c2480625407ea292d766650811855fe"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraper/KnownItems.lua",
+      "published": "Inteface/Addons/AscensionScraper/KnownItems.lua",
+      "sha256": "8fe4ac9500aabdca7bbc84502c70bd0284eacb45294fa8b43534d2e593c13c80"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraper/README.md",
+      "published": "Inteface/Addons/AscensionScraper/README.md",
+      "sha256": "8d1cd096551dd6248299973105f37d44f0725d2671cf01e7c686949fc369f8d2"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperAuto/AscensionScraperAuto.lua",
+      "published": "Inteface/Addons/AscensionScraperAuto/AscensionScraperAuto.lua",
+      "sha256": "e3b06c3b1ed550363ba095193b8e1239d2ed017c3104e869434a2848cab4ee92"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperAuto/AscensionScraperAuto.toc",
+      "published": "Inteface/Addons/AscensionScraperAuto/AscensionScraperAuto.toc",
+      "sha256": "3c4ea987fe3e1c58234eb705d483f4635f7d6e8f1b325476a8ee553c0bb2614f"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperAuto/README.md",
+      "published": "Inteface/Addons/AscensionScraperAuto/README.md",
+      "sha256": "2ca610f7ea804573c37b71e33f4efbf940854edc3cc923477478c165aea790e6"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/AscensionScraperKnownItemIDs.lua",
+      "published": "Inteface/Addons/Scaledump/AscensionScraperKnownItemIDs.lua",
+      "sha256": "8fe4ac9500aabdca7bbc84502c70bd0284eacb45294fa8b43534d2e593c13c80"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/guide.md",
+      "published": "Inteface/Addons/Scaledump/guide.md",
+      "sha256": "f5775064b68c825bd1b0e85f245c47cba415f9e6480036c4a4452e9e9a679038"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/ScaleDump.lua",
+      "published": "Inteface/Addons/Scaledump/ScaleDump.lua",
+      "sha256": "6f49d026868cc202747634b86a5514f3e0dce70f11592c533cfcb2fe723003c5"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/ScaleDump.toc",
+      "published": "Inteface/Addons/Scaledump/ScaleDump.toc",
+      "sha256": "b6d6d56019ea3f8508e76ffeb3f333ff7afd1537a4ae9779e4f3d2f330d023c3"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/Scaledump_results.lua",
+      "published": "Inteface/Addons/Scaledump/Scaledump_results.lua",
+      "sha256": "a12ce777363de529193e96bb15d631fef535a037b1194eee5f7777d62b21f703"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (3).lua",
+      "published": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (3).lua",
+      "sha256": "e99a79eb56a13de2e0b521b392127a6ccf111664a1a4d0f01c9b2a949ec44d39"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (4).lua",
+      "published": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (4).lua",
+      "sha256": "5eae8b9cce1f2ec6e57a4f596f81fe49b159f756dcd3cc5cbc7514720e8c63a2"
+    },
+    {
+      "source": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (5).lua",
+      "published": "Inteface/Addons/Scaledump/Scalesdumpes/Scaledump - Copy (5).lua",
+      "sha256": "c17d68e9bdabb8290a345c3a218acf2cd952be75104c41ab4e65599bcd7ec6ac"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard001/AscensionScraperShard001.toc",
+      "published": "Inteface/Addons/AscensionScraperShard001/AscensionScraperShard001.toc",
+      "sha256": "c363fe42d2cbaa8fd2bc32ab88c4b4eabb8d7585ae90aefe969159e249dffda4"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard002/AscensionScraperShard002.toc",
+      "published": "Inteface/Addons/AscensionScraperShard002/AscensionScraperShard002.toc",
+      "sha256": "b8bc5e2f92d8f8eab8952c21f5598ea4f68a9d813a06d382f830866591770e8e"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard003/AscensionScraperShard003.toc",
+      "published": "Inteface/Addons/AscensionScraperShard003/AscensionScraperShard003.toc",
+      "sha256": "e98ac3e8484f3f1f3cf9b2fdf49171930e70797d2e4461e2fcd2be516096d013"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard004/AscensionScraperShard004.toc",
+      "published": "Inteface/Addons/AscensionScraperShard004/AscensionScraperShard004.toc",
+      "sha256": "6b924c84fed11fa000657a2549492b76e55523ab88bdd7c10d5abb844a63e059"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard005/AscensionScraperShard005.toc",
+      "published": "Inteface/Addons/AscensionScraperShard005/AscensionScraperShard005.toc",
+      "sha256": "d867ff866ed96013d89165f4a792d77a0e6754af30bfee01e77f5c472b3947a1"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard006/AscensionScraperShard006.toc",
+      "published": "Inteface/Addons/AscensionScraperShard006/AscensionScraperShard006.toc",
+      "sha256": "b011965a520dd13d61ca6214e413e810e9a5e6631f889c31f58b3cf063e2cad7"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard007/AscensionScraperShard007.toc",
+      "published": "Inteface/Addons/AscensionScraperShard007/AscensionScraperShard007.toc",
+      "sha256": "7268d6027c391f9c5ec58bea7ffa04f0e3296ce53f745950f36add762d15adae"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard008/AscensionScraperShard008.toc",
+      "published": "Inteface/Addons/AscensionScraperShard008/AscensionScraperShard008.toc",
+      "sha256": "4f03259b703945d1cfa30306624e47a83b48ae64982bf805989bf08f194d7f92"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard009/AscensionScraperShard009.toc",
+      "published": "Inteface/Addons/AscensionScraperShard009/AscensionScraperShard009.toc",
+      "sha256": "d32a3e7cd80d8b5de7089097404cb2effde18ad21262dd2e0fa8fca0a921ba71"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard010/AscensionScraperShard010.toc",
+      "published": "Inteface/Addons/AscensionScraperShard010/AscensionScraperShard010.toc",
+      "sha256": "ad298ecf778a0cfe402f26fcc20dc3ab2b6d884409815b76857472f27d2fb943"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard011/AscensionScraperShard011.toc",
+      "published": "Inteface/Addons/AscensionScraperShard011/AscensionScraperShard011.toc",
+      "sha256": "45e0e4a81e3e50b011620c1d7e32cc1cbe9364a6e9c06132ae0e83b900a8060d"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard012/AscensionScraperShard012.toc",
+      "published": "Inteface/Addons/AscensionScraperShard012/AscensionScraperShard012.toc",
+      "sha256": "f9bbe8e62b7c8127438a583f45a99383cc617cb7b58ffd00d5364b3be4a46531"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard013/AscensionScraperShard013.toc",
+      "published": "Inteface/Addons/AscensionScraperShard013/AscensionScraperShard013.toc",
+      "sha256": "1cd6cfb69dbdc4cd0d1f8a1586b3caa03b26402453102fbaf68928d972874afb"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard014/AscensionScraperShard014.toc",
+      "published": "Inteface/Addons/AscensionScraperShard014/AscensionScraperShard014.toc",
+      "sha256": "9de2fdbf614756e9930269e58f054ea6095d1a0aac267865c7f6a889aa8fbfe4"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard015/AscensionScraperShard015.toc",
+      "published": "Inteface/Addons/AscensionScraperShard015/AscensionScraperShard015.toc",
+      "sha256": "3ead1f49855fbbdfaf63acaaaab7b1ca47286d99a3c5bb62d07cbad6f8e23b8d"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard016/AscensionScraperShard016.toc",
+      "published": "Inteface/Addons/AscensionScraperShard016/AscensionScraperShard016.toc",
+      "sha256": "d6cefdb8c062c28ad74f66b213de60d4ad5f43b681e92f509bffc8d4031a0147"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard017/AscensionScraperShard017.toc",
+      "published": "Inteface/Addons/AscensionScraperShard017/AscensionScraperShard017.toc",
+      "sha256": "96638930937339ce029919b763d785394612a199a3f8339e543f94cefefaf16f"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard018/AscensionScraperShard018.toc",
+      "published": "Inteface/Addons/AscensionScraperShard018/AscensionScraperShard018.toc",
+      "sha256": "7eb6857070df797af1b25a353c63436f7e317b27fb66ec7165db487fd5bfe912"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard019/AscensionScraperShard019.toc",
+      "published": "Inteface/Addons/AscensionScraperShard019/AscensionScraperShard019.toc",
+      "sha256": "5758e89abfd3e6e4609e90615c325c380a472a969101bb23f65b44a01706bda2"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard020/AscensionScraperShard020.toc",
+      "published": "Inteface/Addons/AscensionScraperShard020/AscensionScraperShard020.toc",
+      "sha256": "b1ebf170ba318e6c10adbed220e7223756e17a9fc8a7e54e43645f39d82d34e8"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard021/AscensionScraperShard021.toc",
+      "published": "Inteface/Addons/AscensionScraperShard021/AscensionScraperShard021.toc",
+      "sha256": "833371e1148ca2c7983adafcb30cbdd1dd19c3a1c6319cea395b7aa9559450ca"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard022/AscensionScraperShard022.toc",
+      "published": "Inteface/Addons/AscensionScraperShard022/AscensionScraperShard022.toc",
+      "sha256": "f581024b2e5e77c717027c5fc2808ed6890f502bbc71a24eb89be4f4ee09a02c"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard023/AscensionScraperShard023.toc",
+      "published": "Inteface/Addons/AscensionScraperShard023/AscensionScraperShard023.toc",
+      "sha256": "9cf13496a8fbe1e2ffc2b689757d0e83ba0e132fdc7cd64d6d38dc33766bb36e"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard024/AscensionScraperShard024.toc",
+      "published": "Inteface/Addons/AscensionScraperShard024/AscensionScraperShard024.toc",
+      "sha256": "08783f590bd26d8532cbe4817141ac2049c69a42cc79920b35456ae3f89b9f35"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard025/AscensionScraperShard025.toc",
+      "published": "Inteface/Addons/AscensionScraperShard025/AscensionScraperShard025.toc",
+      "sha256": "bf28bc100d53f25bd9188325dbcbad08c5724cc7a7573e36ceb5fd594138919c"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard026/AscensionScraperShard026.toc",
+      "published": "Inteface/Addons/AscensionScraperShard026/AscensionScraperShard026.toc",
+      "sha256": "3a4acf78dacbc8734832876434f23f402066688be1394bad88f18fa21b614acb"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard027/AscensionScraperShard027.toc",
+      "published": "Inteface/Addons/AscensionScraperShard027/AscensionScraperShard027.toc",
+      "sha256": "df1248751f2a4ac7b3d7b7a33ab3c251058d50e816e5e0917ba3315a8ed8ad19"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard028/AscensionScraperShard028.toc",
+      "published": "Inteface/Addons/AscensionScraperShard028/AscensionScraperShard028.toc",
+      "sha256": "21d009dc4568938861e2ec5ffd7778f446ecce1250b6761818e8fdc3ac36010f"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard029/AscensionScraperShard029.toc",
+      "published": "Inteface/Addons/AscensionScraperShard029/AscensionScraperShard029.toc",
+      "sha256": "fed45aa715abe53e0fde131779322bf0c9bbe4488b205b800fc00a09cd329467"
+    },
+    {
+      "source": "Inteface/Addons/AscensionScraperShard030/AscensionScraperShard030.toc",
+      "published": "Inteface/Addons/AscensionScraperShard030/AscensionScraperShard030.toc",
+      "sha256": "c941276f0832887385df95a96362d2a2ea30ed37ac3f018b0f4f5ca3e2811850"
+    },
+    {
+      "source": "Scaledump.lua",
+      "published": "Scaledump.lua",
+      "sha256": "95f3d1b5c60c1b2cfe2596a28cf4eebbf5747ff386ccec5c6652833010ede583"
+    },
+    {
+      "source": "docs/aowow-reference.md",
+      "published": "info/archive/aowow-reference.md",
+      "sha256": "99744f7d5ed32b6e2dc219e2a53ce5ff18b2d481221755728b07ae0371fd967a"
+    },
+    {
+      "source": "docs/ascension-scraper-pipeline.md",
+      "published": "info/archive/ascension-scraper-pipeline.md",
+      "sha256": "959c63d03a13ad45b9950de5ea7c3144862d3f64645b8fca0bc7b5ccb3cf1301"
+    },
+    {
+      "source": "docs/coa-exporter-pipeline.md",
+      "published": "info/archive/coa-exporter-pipeline.md",
+      "sha256": "7f7b801a8a1c95eca567e33177f42314d013641a5b6536772a9a83aa46fb2046"
+    },
+    {
+      "source": "docs/game-data-updater.md",
+      "published": "info/archive/game-data-updater.md",
+      "sha256": "a905f9178ba0b151f1e2d431a68da4305fa7d16e2eba679194c4bd58dc6bd981"
+    },
+    {
+      "source": "docs/game-data.md",
+      "published": "info/archive/game-data.md",
+      "sha256": "e0d34073f5f149ab5b0aff2e86f07d2e4650ace736d14165c52957a9da009941"
+    }
+  ]
+}
